@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, request, redirect
+from smooth_brain_digit_recognizer import smooth_brain_predict
 
 app = Flask(__name__)
 
@@ -6,7 +7,9 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
         image = processb64(request.data)
-        print(image.shape)
+        np.save('image.npy', image)
+        smooth_brain_predict(image)
+        
         return "success"
     else:
         return render_template('index.html')
@@ -28,10 +31,13 @@ def processb64(data):
 
     # convert to BytesIO, and open via Image.open
     image = Image.open(io.BytesIO(base64_decoded))
+    # resize
     image = image.resize((28, 28))
     # convert to grayscale image
     gray_image = ImageOps.grayscale(image)
     image_np = np.array(gray_image)
+    print(image_np.size)
+    print(image_np)
     return image_np
 
 

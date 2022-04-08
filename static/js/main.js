@@ -49,9 +49,11 @@ function stop() {
 
 function draw(event) {
     ctx.beginPath();
-    ctx.lineWidth = 10;
+    // ctx.lineWidth = 10;
+    ctx.lineWidth = 25;
     ctx.lineCap = 'round';
     ctx.strokeStyle = '#ACD3ED';
+    // ctx.strokeStyle = 'black';
     ctx.moveTo(coord.x, coord.y);
     reposition(event);
     ctx.lineTo(coord.x, coord.y);
