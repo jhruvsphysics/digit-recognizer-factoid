@@ -1,7 +1,6 @@
 __pycache__
 weights/
 test_run.py
-*.png
-*.npy
-*.h5
+image.npy
+xVar.npy
 .DS_Store
