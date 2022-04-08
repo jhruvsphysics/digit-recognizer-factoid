@@ -19,11 +19,7 @@ def smooth_brain_predict(x):
   # a = x.dot(W) + b
   P_y = forward(x, W, b)
   y = np.argmax(P_y, axis=1)
-  print(P_y)
-  print(P_y.shape)
-  print(y)
-  print(y.shape)
-  return True
+  return [P_y, y]
 
 # helper functions
 def flatten(X):
@@ -153,3 +149,6 @@ def train(epochs):
 
 if __name__=="__main__":
   train(2500)
+
+
+

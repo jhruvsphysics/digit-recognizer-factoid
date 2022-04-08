@@ -1,1 +1,7 @@
 __pycache__
+weights/
+test_run.py
+*.png
+*.npy
+*.h5
+.DS_Store

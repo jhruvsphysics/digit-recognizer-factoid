@@ -4,8 +4,7 @@
     font-family: 'Source Code Pro', monospace;
 }
 body {
-    padding-top: 10px;
-
+    padding: 10px 15% 0 15%;
     height: 100%;
     overflow: hidden;
 }
@@ -14,8 +13,13 @@ h1,h2 {
 }
 h2 {
     margin-bottom: 10px;
+    display: block;
+}
+#instruction.hide {
+    display: none;
 }
 .canvas-container {
+    margin-top: 15px;
     height: 550px;
     display: flex;
     flex-direction: column;
