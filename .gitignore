@@ -3,4 +3,5 @@ weights/
 test_run.py
 image.npy
 xVar.npy
+*.png
 .DS_Store
