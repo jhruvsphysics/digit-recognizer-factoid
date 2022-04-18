@@ -21,9 +21,9 @@ function displayFactoid(guess, msg) {
 
 function factoid(msg) {
     let [guess, confidence] = msg.split(" ")
-    fetch(`http://numbersapi.com/${guess}`)
+    fetch(`https://secure-numbersapi.herokuapp.com/api?num=${guess}`)
     .then(res => res.text())
-    .then(msg => displayFactoid(guess, msg))
+    .then(data => displayFactoid(guess, data))
 }
 
 function submitImg() {
