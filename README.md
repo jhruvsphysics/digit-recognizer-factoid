@@ -21,7 +21,7 @@ It recognizes digits and returns interesting facts about the digit.
 
 - Install dependencies:
 
-```pip install -r requirements.txt```
+```pip install -r requirements2.txt```
 
 - Finally, run:
 
