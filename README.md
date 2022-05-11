@@ -15,15 +15,16 @@ Fork:
 ```gh repo fork https://github.com/jhruvsphysics/digit-recognizer-factoid --clone```
 
 - Then, go into the project folder named ```/digit-recognizer-factoid```
-- Make sure to upgrade your pip:
-
-```pip install --upgrade pip```
 
 - Create then activate virtual environment:
 
 ```python3 -m venv .venv```
 
 ```source .venv/bin/activate```
+
+- Make sure to upgrade your pip:
+
+```pip install --upgrade pip```
 
 - Install dependencies:
 
