@@ -41,4 +41,4 @@ Fork:
 
 ## To update, simply run:
 
-```git pull upstream```
+```git pull upstream main```
