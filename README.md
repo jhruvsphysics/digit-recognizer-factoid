@@ -6,6 +6,12 @@ It recognizes digits and returns interesting facts about the digit.
 
 - First, fork it to your Github account, then clone it to your local virtual environment. If you would like to use a command line using Github CLI, run:
 
+(you may want to authenticate yourself first)
+
+```gh auth login --web```
+
+Fork:
+
 ```gh repo fork https://github.com/jhruvsphysics/digit-recognizer-factoid --clone```
 
 - Then, go into the project folder named ```/digit-recognizer-factoid```
