@@ -5,3 +5,7 @@ image.npy
 xVar.npy
 *.png
 .DS_Store
+.venv/
+env/
+venv/
+.env/
